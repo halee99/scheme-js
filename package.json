@@ -1,0 +1,34 @@
+{
+  "name": "scheme-js",
+  "version": "0.0.1",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc --watch",
+    "serve": "parcel -p 8866 sandbox/index.html",
+    "test": "jest --watchAll"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "typescript-parsec": "^0.3.2",
+    "tiny-invariant": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "@types/jest": "^24.0.17",
+    "@types/node": "^12.6.9",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^4.7.4",
+    "parcel": "^2.3.2"
+  },
+  "jest": {
+    "testRegex": "/tests/test.*.ts",
+    "verbose": true,
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}

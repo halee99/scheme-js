@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "lib": ["es6"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es6",
+
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./lib",
+    
+    "noEmitOnError": true,
+    "strictNullChecks": true,
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "lib", "lib-amd", "sandbox"]
+}
